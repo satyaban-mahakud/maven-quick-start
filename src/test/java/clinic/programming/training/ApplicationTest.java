@@ -29,6 +29,11 @@ public class ApplicationTest {
 	public void wordcountTest()
 	{
 		assertEquals(11, app.countWords("Today is Wednesday. Next 1 day to go for long weekdend."));
-	}	
+	}
+	
+	@Ignore
+	public void passingNumbericValueTest() {
+		assertEquals(3, app.countWords("32"));
+	}
 	
 }

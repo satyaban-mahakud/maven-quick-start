@@ -12,4 +12,23 @@ public class ApplicationTest {
 	public void setup() {
 		app = new Application();
 	}
+	
+	@Test 
+	public void EmptyStringTest()
+	{
+		assertEquals(0, app.countWords(""));
+	}
+	
+	@Test 
+	public void nullValueTest()
+	{
+		assertEquals(0, app.countWords(null));
+	}
+	
+	@Test 
+	public void wordcountTest()
+	{
+		assertEquals(11, app.countWords("Today is Wednesday. Next 1 day to go for long weekdend."));
+	}	
+	
 }
